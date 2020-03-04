@@ -1,4 +1,7 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -8,9 +11,20 @@ nav {
     background-color: black;
 }
 
+nav span img{
+    max-width: 30px;
+}
+
 .separador{
     background-color: black;
     padding: 10px;
+}
+
+header{
+    background-image: url(../images/ghilbi-rate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .random{
@@ -23,11 +37,38 @@ nav {
     display: block;
     margin: 50px auto 0;
     padding: 10px;
-    background-color: cyan;
-    border-color: darkcyan;
-    text-shadow: 2px 2px darkcyan;
+    background-color: rgba(0,0,0,0.8);
+    text-shadow: 2px 2px black;
+    border: none;
+}
+
+.pregunta{
+    text-shadow: 2px 2px white;
+    text-align: center;
+    font-weight: bolder;
 }
 
 h2{
     text-align: center;
+    font-weight: bolder;
+    padding-bottom: 30px;
+}
+
+article{
+    padding: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color:#93E5E1;
+}
+
+article img{
+    max-width: 200px;
+    padding-bottom: 30px;
+}
+
+footer{
+    background-color: black;
+    padding: 2vh;
+    
 }

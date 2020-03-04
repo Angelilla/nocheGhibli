@@ -10,7 +10,7 @@ const connectToApiRandom = () => {
   </div>
   <div>
     <h2>${movie.title}</h2>
-    <p>Descripción: ${movie.description}</p>
+    <p>${movie.description}</p>
   </div>
 `)
   .catch(function(error){
