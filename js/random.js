@@ -1,6 +1,8 @@
-let random = Math.round(Math.floor((Math.random() * 20)));
 
 const connectToApiRandom = () => {
+  
+  let random = Math.round(Math.floor((Math.random() * 20)));
+  
   fetch("https://ghibliapi.herokuapp.com/films")
   .then(response => response.json())
   .then(movieData => movie = movieData[random])
