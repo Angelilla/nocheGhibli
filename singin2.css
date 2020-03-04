@@ -22,7 +22,9 @@ nav {
   background-color: black;
 }
 
-
+nav span img{
+  max-width: 30px;
+}
 
 footer{
   background-color: black;

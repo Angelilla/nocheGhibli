@@ -12,6 +12,10 @@ nav {
     min-height: 10vh;
 }
 
+nav span img{
+    max-width: 30px;
+}
+
 #logo{
     letter-spacing: -2px;
     word-spacing: 6px;

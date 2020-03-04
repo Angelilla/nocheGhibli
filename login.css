@@ -12,6 +12,10 @@ nav {
   min-height: 10vh;
 }
 
+nav span img{
+  max-width: 30px;
+}
+
 main{
   background-image: url(./images/lluviatotoro.jpg);
   background-repeat: no-repeat;
