@@ -1,5 +1,3 @@
-//let movies = [];
-
 let random = Math.round(Math.floor((Math.random() * 20)));
 
 const connectToApiRandom = () => {
@@ -8,12 +6,12 @@ const connectToApiRandom = () => {
   .then(movieData => movie = movieData[random])
   .then(getElement => document.getElementById("random-movie").innerHTML = `
   <div class="image">
-  <img src="./images/miniaturaspelis/${movie.title}.jpg" alt="${movie.title}">
-</div>
-<div>
-  <h2>${movie.title}</h2>
-  <p>Descripción: ${movie.description}</p>
-</div>
+    <img src="./images/miniaturaspelis/${movie.title}.jpg" alt="${movie.title}">
+  </div>
+  <div>
+    <h2>${movie.title}</h2>
+    <p>Descripción: ${movie.description}</p>
+  </div>
 `)
   .catch(function(error){
       return error;

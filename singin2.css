@@ -82,3 +82,8 @@ button{
   box-shadow: 3px black;
 }
 
+.error{
+  color: white;
+  text-align: center;
+}
+
