@@ -12,22 +12,21 @@ nav {
     min-height: 10vh;
 }
 
+nav span img{
+    max-width: 30px;
+}
+
 header{
-    background-image: url(./images/header\ rosa.png);
+    background-image: url(./images/ponyo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 88vh;
 }
 
-.separador{
-    background-color: black;
-    padding: 10px;
-    
-}
-
 .buttons{
-    padding: 180px;
+    padding: 100px;
+    flex-direction: row;
 }
 
 @media (max-width: 600px){
