@@ -76,6 +76,12 @@ button{
   box-shadow: 3px black;
 }
 
+.error{
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+
 .barra-final{
   background-color: black;
   padding: 2vh;

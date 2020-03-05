@@ -48,7 +48,7 @@ class SignUpValidator extends Validator{
             //console.log('entra en el foreach')
             usersDB.forEach(user => {
                 if (user.email === this.email){
-                    console.log('emails son iguales')
+                    //console.log('emails son iguales')
                     mailExists = false;
                 } 
             })
@@ -60,6 +60,26 @@ class SignUpValidator extends Validator{
     }
 }
 
-//class LogInValidator{}
+class LogInValidator extends Validator {
+    constructor (name, email, password){
+        super(name, email, password);
+    }
+    checkNameAndPasswordInDB(usersDB){
+        let answer = false;
+        if (!usersDB){
+            return false
+        }
+        console.log(this.name)
+        console.log(this.password)
+        usersDB.forEach(user=>{
+            if (this.name === user.name && this.password === user.password){
+                answer = true
+            }
+        })
+
+        return answer
+    }
+    
+}
 
 

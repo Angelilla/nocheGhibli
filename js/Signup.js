@@ -1,8 +1,10 @@
+// SELECCIONO LOS INPUTS
 let name = document.getElementById("name");
 let email = document.getElementById("email");
 let password = document.getElementById("password");
 let repeatPassword = document.getElementById("repeat-password");
 
+//SELECCIONO OTROS ELEMENTOS
 let logInButton = document.getElementById("log-in-button");
 let form = document.getElementsByClassName("signup-form")[0];
 let formWrapper = document.getElementsByClassName("form-wrapper")[0];
@@ -11,7 +13,11 @@ let signUpButton = document.getElementsByClassName("button")[0];
 let usersDB = JSON.parse(localStorage.getItem('users'))
 
 signUpButton.addEventListener("click", function(event){
+    //0)parar el efecto por default del botón
     event.preventDefault();
+    //1) compruebe que los inputs son válidos
+    //2) dependiendo de si son válidos o no, los guarda en la base de datos o da error
+    
     deleteErrors();
     console.log("click")
     
@@ -22,14 +28,17 @@ signUpButton.addEventListener("click", function(event){
     };
 })
 
+//CHECKEA QUE LOS DATOS DE LOS INPUTS SON CORRECTOS
 function checkValidUser() {
+    //creo una instancia de singupValidator 
     let signUpValidator = new SignUpValidator (name.value, email.value, password.value, repeatPassword.value);
 
     //console.log(signUpValidator)
     
     //let usersDB = JSON.parse(localStorage.getItem("users"));
     let validUser = true;
-
+    //si pasa la comprobacion de checkName (que esta definida en validator.js) todo bien. Si no 
+    //la pasa me crea el error y cambia valid user a false
     if(!signUpValidator.checkName()){
         signUpValidator.errorCreator("Por favor, introduce un nombre válido", name)
         validUser=false
