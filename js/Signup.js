@@ -18,6 +18,7 @@ signUpButton.addEventListener("click", function(event){
     if (checkValidUser()){
         console.log("user registered")
         createUser(name.value, email.value, password.value)
+        window.location.href="menu.html" //para hacer que al pulsar el boton te dirija al menu
     };
 })
 

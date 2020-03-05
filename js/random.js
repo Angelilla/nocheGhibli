@@ -10,7 +10,7 @@ const connectToApiRandom = () => {
   <div class="image">
     <img src="./images/miniaturaspelis/${movie.title}.jpg" alt="${movie.title}">
   </div>
-  <div>
+  <div class="description">
     <h2>${movie.title}</h2>
     <p>${movie.description}</p>
   </div>

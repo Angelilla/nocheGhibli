@@ -47,6 +47,7 @@ header{
 }
 
 h2{
+    
     text-align: center;
     padding-bottom: 30px;
 }
@@ -62,10 +63,17 @@ article{
 article img{
     max-width: 200px;
     padding-bottom: 30px;
+    
 }
 
 footer{
     background-color: black;
     padding: 2vh;
     
+}
+
+.description{
+    background-color: rgba( 244, 164, 96, 0.8);
+    padding: 50px;
+
 }
