@@ -7,7 +7,7 @@ const connectToApiRandom = () => {
   .then(response => response.json())
   .then(movieData => movie = movieData[random])
   .then(getElement => document.getElementById("random-movie").innerHTML = `
-  <div class="image">
+  <div class="image" id='peli'>
     <img src="./images/miniaturaspelis/${movie.title}.jpg" alt="${movie.title}">
   </div>
   <div class="description">

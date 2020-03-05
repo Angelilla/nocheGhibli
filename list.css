@@ -24,6 +24,64 @@ header{
     height: 88vh;
 }
 
+.btn-lst{
+    padding: 100px;
+
+}
+
+.btn-lst a {
+    max-width: 500px;
+    display: block;
+    margin: 50px auto 0;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.8);
+    
+    border: none;
+}
+
+.pregunta{
+    text-align: center;
+}
+
+h2{
+    color: black;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+section{
+    background-color: rgb(160, 52, 52);
+}
+
+.image{
+    max-width: 200px;
+}
+
+.item{
+    border-bottom: 1px  solid black;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 600px) {
+    
+    .item{
+        border-bottom: 1px  solid black;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+   
+}
+
+.description{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
 .separador{
     background-color: black;
     padding: 10px;
@@ -33,5 +91,6 @@ header{
 .barra-final{
     background-color: black;
     padding: 2vh;
+    
 }
 
