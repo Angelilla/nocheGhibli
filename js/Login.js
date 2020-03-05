@@ -42,7 +42,7 @@ function checkValidUser(){
         validUser = true
     } else {
         
-        loginValidator.errorCreator("Por favor, introduce un nombre válido y una contraseña válidos", name)
+        loginValidator.errorCreator("Por favor, introduce un nombre y una contraseña válidos.", name)
         //loginValidator.errorCreator("Por favor, introduce un nombre válido y una contraseña válidos", password)
         validUser = false
     }

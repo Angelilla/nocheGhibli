@@ -69,8 +69,7 @@ class LogInValidator extends Validator {
         if (!usersDB){
             return false
         }
-        console.log(this.name)
-        console.log(this.password)
+        
         usersDB.forEach(user=>{
             if (this.name === user.name && this.password === user.password){
                 answer = true
@@ -79,6 +78,7 @@ class LogInValidator extends Validator {
 
         return answer
     }
+    
     
 }
 
