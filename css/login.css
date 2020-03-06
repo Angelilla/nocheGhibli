@@ -3,40 +3,34 @@
   padding: 0;
 }
 
-body{
+body {
   font-family: 'Spartan', sans-serif;
-  background-image: url(./images/tren.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-@media (max-width: 600px) {
-   body {
-     background-image: url(./images/nfezjlmvn.jpg);
-   }
-  
 }
 
 nav {
   background-color: black;
+  min-height: 10vh;
 }
 
 nav span img{
   max-width: 30px;
 }
 
-footer{
-  background-color: black;
-  padding: 10px;
-  position: relative;
+main{
+  background-image: url(/images/lluviatotoro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 88vh;
 }
 
-.main-forms {
-  margin-top: 75px;
-  padding: 30px;
+@media (max-width: 600px) {
+  main {
+    background-image: url(/images/jcrezc.jpg);
+  }
+ 
 }
-  
+
 .form-wrapper {
   padding: 20px;
   display: flex;
@@ -44,7 +38,7 @@ footer{
   flex-direction: column;
   align-items: center;
 }
-  
+
 .form-wrapper > form {
   display: flex;
   flex-direction: column;
@@ -54,9 +48,8 @@ footer{
   padding: 30px;
   background-color:rgba(0, 0, 0, 0.6);
   border-radius: 5px;
-  
 }
-  
+
 h2 {
   text-align: center;
   color:white;
@@ -86,8 +79,17 @@ button{
 .error{
   color: white;
   text-align: center;
+  padding-top: 20px;
 }
 
+.barra-final{
+  background-color: black;
+  padding: 2vh;
+}
+
+section{
+  padding-top: 80px;
+}
 
 .form-wrapper > form{
   animation:scale-in-center 2s cubic-bezier(.25,.46,.45,.94) 1s both;

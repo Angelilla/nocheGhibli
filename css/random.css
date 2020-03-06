@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
 }
@@ -9,27 +9,30 @@ body {
 
 nav {
     background-color: black;
-    min-height: 10vh;
 }
 
 nav span img{
     max-width: 30px;
 }
 
+.separador{
+    background-color: black;
+    padding: 10px;
+}
+
 header{
-    background-image: url(./images/ciozau.jpg);
+    background-image: url(/images/ghilbi-rate.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 88vh;
 }
 
-.btn-lst{
+.random{
     padding: 100px;
 
 }
 
-.btn-lst a {
+.random a {
     max-width: 500px;
     display: block;
     margin: 50px auto 0;
@@ -44,53 +47,33 @@ header{
 }
 
 h2{
-    color: black;
+    
     text-align: center;
     padding-bottom: 30px;
 }
 
-section{
-    background-color: rgb(160, 52, 52);
-}
-
-.image{
-    max-width: 200px;
-}
-
-.item{
-    border-bottom: 1px  solid black;
-    padding: 30px;
-    display: flex;
-    flex-direction: row;
-}
-
-@media (max-width: 600px) {
-    
-    .item{
-        border-bottom: 1px  solid black;
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-   
-}
-
-.description{
-    padding: 20px;
+article{
+    padding: 100px;
+    text-align: center;
     display: flex;
     flex-direction: column;
+    background-color:#93E5E1;
 }
 
-.separador{
-    background-color: black;
-    padding: 10px;
+article img{
+    max-width: 200px;
+    padding-bottom: 30px;
+    
 }
 
-
-.barra-final{
+footer{
     background-color: black;
     padding: 2vh;
     
 }
 
+.description{
+    background-color: rgba( 244, 164, 96, 0.8);
+    padding: 50px;
+
+}
