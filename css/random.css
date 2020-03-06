@@ -75,5 +75,16 @@ footer{
 .description{
     background-color: rgba( 244, 164, 96, 0.8);
     padding: 50px;
+    border-radius: 5px;
+}
 
+@media (max-width: 600px) {
+   
+    .random{
+        padding: 70px;
+    }
+
+    article{
+       padding: 50px; 
+    }
 }

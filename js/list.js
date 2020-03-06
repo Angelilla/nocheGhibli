@@ -12,8 +12,8 @@ function connectToApiListRate(){
 </div>
 <div class="description">
   <h4>${sortArray[index].title}</h4>
-  <h5>${sortArray[index].release_date}</h5>
-  <h6>${sortArray[index].rt_score}</h6>
+  <h5>Año: ${sortArray[index].release_date}</h5>
+  <h6>Rate: ${sortArray[index].rt_score}</h6>
   <p>${sortArray[index].description}</p>
 </div></li>`))
   .then(document.getElementById('lista').innerHTML = "")

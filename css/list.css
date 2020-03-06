@@ -74,6 +74,10 @@ section{
         text-align: center;
     }
    
+    .btn-lst{
+        padding: 70px;
+    
+    }
 }
 
 .description{
@@ -94,3 +98,18 @@ section{
     
 }
 
+.list{
+    color: white;
+    
+}
+
+.list p{
+    background-color: rgba(0,0,0,0.8);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h4{
+    font-weight: 500;
+}
