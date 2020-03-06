@@ -17,7 +17,7 @@ nav span img{
 }
 
 main{
-  background-image: url(/images/lluviatotoro.jpg);
+  background-image: url(../images/lluviatotoro.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -26,7 +26,7 @@ main{
 
 @media (max-width: 600px) {
   main {
-    background-image: url(/images/jcrezc.jpg);
+    background-image: url(../images/jcrezc.jpg);
   }
  
 }

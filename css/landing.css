@@ -22,7 +22,7 @@ nav span img{
 }
 
 header{
-    background-image: url(/images/header\ rosa.png);
+    background-image: url(../images/header\ rosa.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
